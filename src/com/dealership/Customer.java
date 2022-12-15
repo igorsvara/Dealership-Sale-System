@@ -12,7 +12,7 @@ public class Customer {
     private final String phoneNumber;
     private final String email;
 
-    private List<Car> carsBought = new ArrayList<>();
+    private List<Car> carsBought;
 
     //CONSTRUCTOR
     public Customer(int id, String name, int age, String address, String phoneNumber, String email) {
@@ -23,16 +23,6 @@ public class Customer {
         this.phoneNumber = phoneNumber;
         this.email = email;
         this.carsBought = new ArrayList<Car>();
-    }
-
-    public Customer(Customer customer, List<Car> carsBought, List<Car> carsSold) {
-        this.customerId = customer.getCustomerId();
-        this.name = customer.getName();
-        this.age = customer.getAge();
-        this.address = customer.getAddress();
-        this.phoneNumber = customer.getPhoneNumber();
-        this.email = customer.getEmail();
-        this.carsBought = carsBought;
     }
 
     //GETTERS

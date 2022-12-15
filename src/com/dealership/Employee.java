@@ -30,17 +30,6 @@ public class Employee {
         this.salary = salary;
     }
 
-    public Employee(Employee employee, List<Car> carsSold) {
-        this.employeeId = employee.getEmployeeId();
-        this.name = employee.getName();
-        this.age = employee.getAge();
-        this.address = employee.getAddress();
-        this.phoneNumber = employee.getPhoneNumber();
-        this.email = employee.getEmail();
-        this.salary = employee.salary;
-        this.carsSold = carsSold;
-    }
-
     //GETTER
     public int getEmployeeId() {
         return employeeId;

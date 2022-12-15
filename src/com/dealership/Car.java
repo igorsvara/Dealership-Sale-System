@@ -2,26 +2,16 @@ package com.dealership;
 
 public class Car {
 
-    private final int carId;
+    private int carId;
     private final String brand;
     private final String model;
     private final int year;
     private final int kilometers;
-    private final int buyPrice;
-    private final int sellPrice;
-
+    private int buyPrice;
+    private int sellPrice;
     private String owner;
 
     //CONSTRUCTORS
-    /*public Car(Car car) {
-        this.brand = car.brand;
-        this.model = car.model;
-        this.year = car.year;
-        this.kilometers = car.kilometers;
-        this.buyPrice = car.buyPrice;
-        this.owner = car.owner;
-    }*/
-
     public Car(int carId, String brand, String model, int year,
                int kilometers, int buyPrice, int sellPrice, String owner) {
 
@@ -61,9 +51,15 @@ public class Car {
         return owner;
     }
 
-    //SETTER
+    //METHODS
+    public void eraseSellPrice(){
+        this.sellPrice = 0;
+    }
     public void setOwner(String newOwner) {
         this.owner = newOwner;
+    }
+    public void setBuyPrice(int price) {
+        this.buyPrice = price;
     }
 
 }
